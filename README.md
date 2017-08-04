@@ -17,15 +17,20 @@ as an example of best practices, but it will give you an idea of how these piece
 
 Again, this was done quickly so that I could demonstrate it working in the final release. There's probably a LOT of wrongness in here.
 
-Find versions that were compatible with all the parts of rxjs, angular 2, ngrx , typescript, awesome-typescript-loader
+Find versions that were compatible playing together 
+- rxjs, 
+- angular 2,
+- ngrx , 
+- typescript, 
+- awesome-typescript-loader
 
 Fix the extra typos 
 
 Had to fix typings version 
-npm install -g typings
-typings i env~node -S
+- npm install -g typings
+- typings i env~node -S
 
 and running json-server locally on port 3001
-npm install -g json-server
-json-server -p 3001 "server/api/db.json"
+- npm install -g json-server
+- json-server -p 3001 "server/api/db.json"
 
