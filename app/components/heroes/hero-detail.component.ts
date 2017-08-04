@@ -17,8 +17,8 @@ import {HeroForm} from './hero-form.component';
             (back)="goBack()"
             (save)="save($event)"
         ></rx-hero-form>
-    `,
-    directives: [HeroForm]
+    `
+    //directives: [HeroForm]
 })
 export class HeroDetail implements OnInit, OnDestroy {
     idSub: Subscription;

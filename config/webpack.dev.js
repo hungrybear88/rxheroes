@@ -54,11 +54,13 @@ module.exports = webpackMerge(commonConfig, {
         },
         stats: 'minimal',
         outputPath: helpers.root('dist'),
-        proxy: {
-            '/api/*': {
-                target: 'http://localhost:3000',
-                secure: false
-            }
-        }
+        //proxy: {
+        //    '/api/*': // "http://[::1]:3000" 
+        //        {
+        //        target: 'http://localhost:3000',
+        //        secure: false,
+        //        logLevel: "debug"
+        //    }
+        //}
     }
 });

@@ -8,7 +8,7 @@ import {HeroService} from '../services';
 @Injectable()
 export class HeroEffects {
     constructor (
-        private update$: Actions
+        private update$: Actions,
         private heroActions: HeroActions,
         private svc: HeroService,
     ) {}
@@ -18,9 +18,9 @@ export class HeroEffects {
         .switchMap(() => this.svc.getHeroes())
         .map(heroes => this.heroActions.loadHeroesSuccess(heroes));
 
-    @Effect() getHero$ = this.update$
+     @Effect() getHero$ = this.update$
         .ofType(HeroActions.GET_HERO)
-        .map<string>(action => action.payload)
+        .map(action => action.payload)
         .switchMap(id => this.svc.getHero(id))
         .map(hero => this.heroActions.getHeroSuccess(hero));
 

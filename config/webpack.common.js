@@ -70,7 +70,7 @@ module.exports = {
     },
 
     plugins: [
-        new ForkCheckerPlugin(),
+        // new ForkCheckerPlugin(),
         new webpack.optimize.OccurrenceOrderPlugin(true),
         new webpack.optimize.CommonsChunkPlugin({
             name: ['polyfills', 'vendor'].reverse()

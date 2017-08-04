@@ -16,7 +16,7 @@ const routes: Routes = [
     {
         path: 'dashboard',
         component: Dashboard
-    }
+    },
     {
         path: 'heroes',
         component: Heroes

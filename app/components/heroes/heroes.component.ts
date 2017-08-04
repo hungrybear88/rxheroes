@@ -10,8 +10,8 @@ import {HeroDetail} from './hero-detail.component';
 
 @Component({
     selector: 'rx-heroes',
-    template: require('./heroes.component.html'),
-    directives: [HeroList, HeroDetail]
+    template: require('./heroes.component.html')
+    // directives: [HeroList, HeroDetail]
 })
 export class Heroes {
     heroes: Observable<any>;

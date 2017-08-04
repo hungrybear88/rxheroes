@@ -1,4 +1,4 @@
-import {HTTP_PROVIDERS} from '@angular/http';
+// import {HTTP_PROVIDERS} from '@angular/http';
 
 import {HeroService} from './hero';
 
@@ -7,6 +7,6 @@ export {
 };
 
 export default [
-    HTTP_PROVIDERS,
+    // HTTP_PROVIDERS,
     HeroService
 ];
